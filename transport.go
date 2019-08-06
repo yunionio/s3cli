@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package minio
+package s3cli
 
 import (
 	"crypto/tls"
