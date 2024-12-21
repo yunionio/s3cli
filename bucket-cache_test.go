@@ -285,7 +285,7 @@ func generateLocationResponse(resp *http.Response, bodyContent []byte) (*http.Re
 func TestProcessBucketLocationResponse(t *testing.T) {
 	// LocationResponse - format for location response.
 	type LocationResponse struct {
-		XMLName  xml.Name `xml:"http://s3.amazonaws.com/doc/2006-03-01/ LocationConstraint" json:"-"`
+		XMLName  xml.Name `xml:"LocationConstraint" json:"-"`
 		Location string   `xml:",chardata"`
 	}
 
